@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './header.css';
 import { NavItem } from '../NavItems/navItem.jsx';
@@ -7,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="header">
-        <h2 className='header__title'>Cripto Dashboard</h2>
+      <Link to="/"><h2 className='header__title'>Crypto Dashboard</h2></Link>
       <nav className="nav">
         <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
           ☰
