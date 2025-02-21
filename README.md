@@ -71,6 +71,6 @@ Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que
 
 ## 📧 Contacto
 Si tenes preguntas o sugerencias, no dudes en contactarme:
-Email: maximoverdi21@gmail.com
 
+Email: maximoverdi21@gmail.com
 LinkedIn: https://www.linkedin.com/in/maximoverdi/
