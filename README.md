@@ -31,7 +31,7 @@ El proyecto está estructurado en **tres páginas principales**:
 
 ## ✨ Tecnologías utilizadas
 
-- **Front End**: React, CSS, Boxicons.
+- **Front End**: HTML, CSS, JavaScript, React.
 - **APIs**: Integración con servicios de datos financieros en tiempo real.
 
 ---
