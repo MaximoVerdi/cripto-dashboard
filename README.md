@@ -54,10 +54,12 @@ Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que
    ```bash
    git clone https://github.com/tu-usuario/crypto-dashboard.git
 2. Instala las dependencias:
-    npm install
-3. Inicia el servidor de desarrollo:
-     npm start
-4. Abre tu navegador y visita:
+   ```bash
+   npm install
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm start
+5. Abre tu navegador y visita:
      http://localhost:3000
 
 ## 🙌 Contribuciones
