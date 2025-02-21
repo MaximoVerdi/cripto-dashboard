@@ -14,7 +14,7 @@ const HeroSection = () => {
                 </ul>
                 <button className="nav-item-btn">Download App</button>
             </div>
-            <img src="/iphones.png" alt="hero-section__image" />
+            <img src="/image-removebg-preview.webp" alt="hero-section__image" />
         </section>
     )
 }

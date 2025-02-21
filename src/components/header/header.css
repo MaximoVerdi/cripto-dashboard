@@ -8,20 +8,14 @@
     padding: 0 60px;
     height: 80px;
     background-color: var(--light-color);
-    scroll-timeline: auto;
-    animation-name: fadeIn;
-    animation-timeline: scroll();
-    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.1);
+    transition: background .3s;
+    z-index: 1000;
 }
 
-@keyframes fadeIn {
-    from {
-        backdrop-filter: blur(0);
-    }
-    to {
-        backdrop-filter: blur(10px);
-        background-color: #0b1527ae;
-    }
+.scroll {
+    background-color: #0b1527cb;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .header__title {

@@ -19,7 +19,7 @@ strong {
 }
 
 .hero-section__info h1 {
-    font-size: 5vw;
+    font-size: 4.8vw;
     font-weight: bold;
     text-wrap: balance;
     max-width: 80%;
@@ -80,7 +80,6 @@ strong {
 }
 .hero-section img {
     height: 400px;
-    filter: hue-rotate(340deg);
     z-index: -1;
     filter: drop-shadow(0 0 150px var(--extra-light-color));
 }
@@ -155,7 +154,4 @@ strong {
         margin-top: 50px;
     }
 
-    .hero-section__info span {
-        /* font-size: 1em; */
-    }
 }

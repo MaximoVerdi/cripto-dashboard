@@ -8,14 +8,15 @@
 :root {
     --bg-color: #010118;
     --light-color: #0B1527;
-    --extra-light-color: #0871C3;
+    --extra-light-color: #0ea4e8;
     --quaternary-color: #6c757d;
-    --quinary-color: #6c757d;
+    --grey-color: #b5b5b5;
+    --green-color: #1dae9b;
 }
 
 body {
     background: rgb(8,113,195);
-    background: linear-gradient(to top, rgba(8,113,195,1), rgba(1,1,24,1) 67%);
+    background: linear-gradient(to top, rgba(8,113,195,1), rgba(1,1,24,1) 60%);
     color: #fff;
     height: 500vh;
 }
