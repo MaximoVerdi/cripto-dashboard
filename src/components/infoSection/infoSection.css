@@ -1,0 +1,126 @@
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 0;
+    max-width: 100%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.info-section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    width: 30%;
+    text-wrap: nowrap;
+}
+
+.info-section__text b {
+    color: #0e6c98;
+}
+
+.info-section-text-h2 {
+    font-size: 3.2em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.info-section-text-span {
+    margin-bottom: 30px;
+    color: #8b8a8b;
+}
+
+.info-section-text-p {
+    font-size: 1.2em;
+    text-wrap: balance;
+    margin-bottom: 50px;
+}
+
+.info-section-text-p strong {
+    color: #162e5c;
+}
+
+.info-section__image img {
+    height: 32vw;
+}
+
+.info-section__buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.info-section__btn {
+    font-size: .9em;
+    width: fit-content;
+    transition: .3s;
+    padding: 9px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.info-section__btn:first-child {
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+}
+
+.info-section__btn:last-child {
+    background-color: #162e5c;
+    color: #fff;
+    border: 1px solid #162e5c;
+}
+
+@media (max-width: 1150px) {
+
+    .info-section {
+        padding: 100px 60px; 
+    }
+    .info-section__text {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section__text {
+        align-items: center;
+        text-align: center;
+        text-wrap: nowrap;
+        max-width: 80%;
+    }
+
+    .info-section-text-h2  {
+        font-size: 2.5em;
+    }
+
+    .info-section__image img {
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    .info-section__text {
+        max-width: 100%;
+    }
+
+    .info-section__buttons {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-section {
+        gap: 50px;
+        padding: 80px 20px;
+    }
+}

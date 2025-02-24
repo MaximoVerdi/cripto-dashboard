@@ -118,7 +118,7 @@ const Bento = () => {
           Track real-time prices, trends, and market data. Stay informed and
           make smarter decisions! 🚀
         </p>
-        <Link to="/api-data">View More Details</Link>
+        <Link to="/apiData">View More Details</Link>
       </div>
         <div className="bento-section__content">
           <div className="bento-item first-item" data-aos="fade-up">
@@ -130,11 +130,11 @@ const Bento = () => {
                   <span>{cryptoData?.BTC?.USDT?.FROMSYMBOL}</span>
                 </ul>
               </div>
-              <p className="price">${cryptoData?.BTC?.USDT?.PRICE.toFixed(2)}</p>
-              <p className="change">{cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR.toFixed(2)}% +{cryptoData?.BTC?.USDT?.CHANGE24HOUR.toFixed(2)}</p>
-              <p className="volume">24hs Vol: ${cryptoData?.BTC?.USDT?.VOLUMEDAY.toFixed(2)}</p>
+              <p className="price">${cryptoData?.BTC?.USDT?.PRICE.toLocaleString()}</p>
+              <p className={`change ${cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR < 0 ? `negative` : ``}`}>{cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR.toLocaleString()}% {cryptoData?.BTC?.USDT?.CHANGE24HOUR.toFixed(2)}</p>
+              <p className="volume">24hs Vol: ${cryptoData?.BTC?.USDT?.VOLUMEDAY.toLocaleString()}</p>
             </ul>
-            <i className="bx bxs-up-arrow"></i>
+            <i className={`bx ${cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR < 0 ? 'bxs-down-arrow' : 'bxs-up-arrow'}`}></i>
           </div>
 
           <div className="bento-item second-item" data-aos="fade-up">
@@ -157,11 +157,17 @@ const Bento = () => {
           <div className="bento-item third-item" data-aos="fade-up">
                 <div className="news-container">
                     <div className="news-item">
+                    <div className="news-image-container">
+                      {currentArticle.imageurl ? (
                         <img
-                        src={currentArticle.imageurl}
-                        alt={currentArticle.title}
-                        className="news-image"
+                          src={currentArticle.imageurl}
+                          alt={currentArticle.title}
+                          className="news-image"
                         />
+                      ) : (
+                        <p className="no-image-message">No image available</p>
+                      )}
+                    </div>
                         <h3>{currentArticle.title}</h3>
                         <a href={currentArticle.url} target="_blank" rel="noopener noreferrer">
                         Leer más

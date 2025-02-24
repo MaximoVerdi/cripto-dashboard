@@ -12,7 +12,7 @@ const HeroSection = () => {
                     <li><i class='bx bxs-check-circle'></i><p>Advanced <strong>Portfolio Managment</strong> to track your holdings </p></li>
                     <li><i class='bx bxs-check-circle'></i><p>Secure & Reliable Data powered by <strong>top-tier </strong>APIs</p></li>
                 </ul>
-                <button className="nav-item-btn">Download App</button>
+                <button className="nav-item-btn">Explore Dashboard</button>
             </div>
             <img src="/image-removebg-preview.webp" alt="hero-section__image" />
         </section>

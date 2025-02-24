@@ -1,3 +1,7 @@
+.nav-block .nav-item-btn{
+    display: none;
+}
+
 .header {
     top: 0;
     position: fixed;
@@ -10,6 +14,10 @@
     background-color: var(--light-color);
     transition: background .3s;
     z-index: 1000;
+}
+
+.header-block {
+    position: static;
 }
 
 .scroll {

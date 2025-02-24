@@ -1,0 +1,84 @@
+.crypto-dashboard {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+}
+
+.crypto-dashboard__widgets {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  background-color: #000;
+  height: 12vh;
+  padding: 0 50px;
+}
+
+.crypto-dashboard__widgets-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.crypto-dashboard__widgets-list li i {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* Crypto dashboard content */
+.crypto-dashboard__content {
+  padding: 30px;
+  color: #fff;
+  width: 70%;
+}
+
+/* Crypto dashboard Balance */
+
+.crypto-dashboard__balance {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.crypto-dashboard__balance span {
+  color: var(--red-color);
+  background-color: rgba(255, 99, 99, 0.124);
+  padding: 5px 10px;
+  border-radius: 120px;
+}
+
+.input-search {
+  border: none;
+  padding: 8px;
+  outline: none;
+  border-radius: 20px;
+  color: var(--bg-color);
+}
+
+.lupita {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.lupita i {
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+
+.crypto-dashboard__widgets-list i:hover {
+  color: var(--quaternary-color);
+}
+
+.crypto-dashboard__balance ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crypto-dashboard__balance h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
