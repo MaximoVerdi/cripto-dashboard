@@ -60,13 +60,9 @@ El proyecto está estructurado en **tres páginas principales**:
 
 ## 🎯 Objetivo del proyecto
 
-Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que también ofrece una herramienta útil para cualquier persona interesada en el mundo de las finanzas y las criptomonedas. ¡Bienvenido a **Crypto Dashboard**, tu ventana al mercado digital!
-
----
+## Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que también ofrece una herramienta útil para cualquier persona interesada en el mundo de las **finanzas** y las **criptomonedas**.
 
 ## 📸 Capturas de pantalla
-
-(Agrega aquí capturas de pantalla de tu proyecto si lo deseas).
 
 ---
 
