@@ -59,7 +59,7 @@ Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que
    ```
 3. Inicia el servidor de desarrollo:
    ```bash
-   npm start
+   npm run dev
    ```
 4. Abre tu navegador y visita:
    http://localhost:3000
