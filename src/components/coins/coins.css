@@ -1,150 +1,137 @@
 .coins-section {
-    display: grid;
-    place-content: center;
-    gap: 15px;
-    padding: 100px 30px;
+  display: grid;
+  place-content: center;
+  gap: 15px;
+  padding: 100px 30px;
 }
 
 .coins-section__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 10px;
 }
 
 .coins-section__text p {
-    font-size: 1.2em;
-    color: var(--extra-light-color);
-    font-weight: bold;
+  font-size: 1.2em;
+  color: var(--extra-light-color);
+  font-weight: bold;
 }
 
 .coins-section__text h2 {
-    font-size: 3em;
-    text-align: center;
-    font-weight: bold;
-    width: 60%;
-    text-wrap: wrap;
-    margin: auto;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  width: 60%;
+  text-wrap: wrap;
+  margin: auto;
 }
 
 .coins-section__text button {
-    transition: .3s;
-    padding: 9px 20px;
-    border-radius: 20px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    margin-top: 10px;
+  transition: 0.3s;
+  padding: 9px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 10px;
 }
 
 .coin {
-    display: grid;
-    grid-template-columns: repeat(5, 150px);
-    align-items: center;
-    gap: 120px;
-    justify-content: space-between;
-    border-bottom: 1px solid #666768;
-    padding-bottom: 20px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  align-items: center;
+  gap: 120px;
+  justify-content: space-between;
+  border-bottom: 1px solid #666768;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .coin h6 {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: var(--grey-color);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--grey-color);
 }
 
 .changePrice {
-    font-size: 1.2em;
-    color: var(--green-color);
+  font-size: 1.2em;
+  color: var(--green-color);
 }
 
 .coin span {
-    font-size: 1.8em;
-    font-weight: bold;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .coin a {
-    font-size: 1.2em;
-    color: #fff;
-    text-decoration: none;
-    transition: .3s;
-    user-select: none;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  user-select: none;
 }
 
 .coin a:hover {
-    text-decoration: underline;
-}
-
-
-.negative {
-    color: var(--red-color);
-} 
-.bxs-up-arrow {
-    color: var(--green-color);
-}
-.bxs-down-arrow {
-    color: var(--red-color) !important;
-}
-@media (max-width: 1350px) {
-
-    .coins-section {
-        display: grid;
-        place-content: center;
-        gap: 15px;
-        margin-top: 150px;
-    }
-    .coin {
-        display: grid;
-        grid-template-columns: repeat(4, 80px);
-        align-items: center;
-        gap: 150px;
-        border-bottom: 1px solid #666768;
-        padding-bottom: 20px;
-    }
-
-    .volume {
-        display: none;
-    }
+  text-decoration: underline;
 }
 
 @media (max-width: 1350px) {
-    .coin {
-        grid-template-columns: repeat(4, 80px);
+  .coins-section {
+    display: grid;
+    place-content: center;
+    gap: 15px;
+    margin-top: 150px;
+  }
+  .coin {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    align-items: center;
+    gap: 150px;
+    border-bottom: 1px solid #666768;
+    padding-bottom: 20px;
+  }
 
-    }
+  .volume {
+    display: none;
+  }
+}
 
-    .volume {
-        display: none;
-    }
+@media (max-width: 1350px) {
+  .coin {
+    grid-template-columns: repeat(4, 80px);
+  }
+
+  .volume {
+    display: none;
+  }
 }
 
 @media (max-width: 850px) {
+  .coins-section {
+    display: grid;
+    place-content: center;
+    gap: 15px;
+    margin-top: 0;
+  }
+  .coin {
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    gap: 15vw;
+  }
 
-    .coins-section {
-        display: grid;
-        place-content: center;
-        gap: 15px;
-        margin-top: 0;;
-    }
-    .coin {
-        grid-template-columns: repeat(3, auto);
-        align-items: center;
-        gap: 15vw;
-    }
+  .coin span {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
 
-    .coin span {
-        font-size: 1.4em;
-        font-weight: bold;
-    }
+  .coin a {
+    display: none;
+  }
 
-    .coin a {
-        display: none;
-    }
-
-    .coins-section__text {
-        display: none;
-    }
+  .coins-section__text {
+    display: none;
+  }
 }

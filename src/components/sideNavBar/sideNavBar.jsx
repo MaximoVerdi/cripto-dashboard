@@ -22,7 +22,13 @@ const SideNavBar = () => {
             Dashboard
           </Link>
         </li>
-
+        <li className="sidebar-nav__item">
+          <i class="bx bxs-contact"></i>
+          <Link className="sidebar-nav__item-link" to="/contact">
+            Contact
+          </Link>
+        </li>
+        <hr />
         <li className="sidebar-nav__item">
           <i class="bx bx-bitcoin"></i>
           <Link className="sidebar-nav__item-link" to="/dashboard/crypto">
@@ -33,12 +39,6 @@ const SideNavBar = () => {
           <i class="bx bx-candles"></i>
           <Link className="sidebar-nav__item-link" to="/dashboard/stock">
             Stock
-          </Link>
-        </li>
-        <li className="sidebar-nav__item">
-          <i class="bx bxs-contact"></i>
-          <Link className="sidebar-nav__item-link" to="/contact">
-            Contact
           </Link>
         </li>
       </ul>

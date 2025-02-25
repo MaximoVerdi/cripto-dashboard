@@ -6,13 +6,13 @@
   gap: 5em;
   min-width: 220px;
   height: 100vh;
-  background-color: #000;
+  background-color: var(--light-color);
 }
 
 .sidebar__title {
   text-align: center;
   margin-top: 40px;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .sidebar-nav__list {
@@ -21,7 +21,6 @@
   gap: 20px;
   list-style: none;
   text-align: center;
-
 }
 
 .sidebar-nav__item {
@@ -39,6 +38,7 @@
   color: #dddddd;
 }
 
-.sidebar-nav__item:hover i, .sidebar-nav__item:hover a {
+.sidebar-nav__item:hover i,
+.sidebar-nav__item:hover a {
   color: #fff;
 }

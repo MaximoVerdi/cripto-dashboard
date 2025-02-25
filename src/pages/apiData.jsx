@@ -9,6 +9,7 @@ import {
   FAQ,
 } from "../components/components.jsx";
 import { DashboardLayout } from "../components/dashboardLayout";
+import "../components/index.css";
 
 const ApiData = () => {
   return (
