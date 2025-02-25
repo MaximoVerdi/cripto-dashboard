@@ -47,23 +47,6 @@ Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que
 
 ---
 
-## 🔧 Instalación y uso
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/crypto-dashboard.git
-   ```
-2. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-3. Inicia el servidor de desarrollo:
-   ```bash
-   npm run dev
-   ```
-4. Abre tu navegador y visita:
-   http://localhost:3000
-
 ## 🙌 Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si deseas mejorar el proyecto, sigue estos pasos:
