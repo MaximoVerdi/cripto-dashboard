@@ -45,6 +45,12 @@ Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que
 
 ## 📸 Capturas de pantalla
 
+![Hero-section](./public/hero-section.png)
+![Bento-section](./public/bento-section.png)
+![Coins-section](./public/coins-section.png)
+![Info-section](./public/info-section.png)
+![FAQ-section](./public/faq-section.png)
+
 ---
 
 ## 🙌 Contribuciones
