@@ -41,7 +41,7 @@ El proyecto está estructurado en **tres páginas principales**:
 
 ## 🎯 Objetivo del proyecto
 
-## Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que también ofrece una herramienta útil para cualquier persona interesada en el mundo de las **finanzas** y las **criptomonedas**.
+Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que también ofrece una herramienta útil para cualquier persona interesada en el mundo de las **finanzas** y las **criptomonedas**.
 
 ## 📸 Capturas de pantalla
 
