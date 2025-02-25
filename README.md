@@ -28,25 +28,6 @@ El proyecto está estructurado en **tres páginas principales**:
 ### 3. **Contacto**
 
 - Sección sencilla para que los usuarios puedan ponerse en contacto.
-- # Ideal para consultas, sugerencias o colaboraciones.
-  - Introducción clara sobre el propósito de la web.
-  - **Bento Grid** con noticias de último momento.
-  - Actualización en tiempo real del **dólar blue**.
-  - Precio actual de **Bitcoin (BTC)**.
-  - Sección de precios de las criptomonedas más populares.
-
-### 2. **Dashboard**
-
-- Monitoreo de **criptomonedas** y **CEDEARs** favoritos.
-- Información detallada de cada activo:
-  - Precio actual.
-  - Volumen de operaciones del día.
-  - Tendencias.
-- Diseño claro y visualmente atractivo.
-
-### 3. **Contacto**
-
-- Sección sencilla para que los usuarios puedan ponerse en contacto.
 - Ideal para consultas, sugerencias o colaboraciones.
 
 ---
