@@ -17,7 +17,8 @@
 }
 
 :root {
-  --dashboard-bg-color: #010329;
+  --dashboard-bg-color: #13121a;
+  --dashboard-nav-bg-color: #1d1c24;
   --bg-color: #010118;
   --light-color: #0b1527;
   --extra-light-color: #0ea4e8;

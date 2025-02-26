@@ -134,7 +134,7 @@ const CryptoDashboard = () => {
               {cryptoData?.ALGO?.USDT?.CHANGE24HOUR.toLocaleString()}
             </p>
             <p
-              className={`daily-change ${cryptoData?.ALGO?.USDT?.CHANGEPCT24HOUR < 0 ? "negative" : ""}`}
+              className={`pct-change ${cryptoData?.ALGO?.USDT?.CHANGEPCT24HOUR < 0 ? "negative" : ""}`}
             >
               {cryptoData?.ALGO?.USDT?.CHANGEPCT24HOUR.toLocaleString()}%
             </p>
@@ -144,7 +144,7 @@ const CryptoDashboard = () => {
         <div className="crypto-dashboard__slider-item">
           <ul>
             <img
-              src="../node_modules/cryptocurrency-icons/svg/icon/algo.svg"
+              src="../node_modules/cryptocurrency-icons/svg/icon/theta.svg"
               alt=""
             />
             <p>THETAUSDT</p>
@@ -191,6 +191,48 @@ const CryptoDashboard = () => {
       <div className="crypto-dashboard__content">
         <div className="crypto-dashboard__graph">
           <TradingViewChart />
+        </div>
+
+        <div className="crypto-dashboard__info">
+          <div className="convert">
+            <h2>Convert</h2>
+            <div className="convert-input">
+              <input type="number" placeholder="0.00" />
+              <select name="" id="">
+                <option value="USDT">USDT</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="ALGO">ALGO</option>
+                <option value="THETA">THETA</option>
+                <option value="HBAR">HBAR</option>
+                <option value="ORDI">ORDI</option>
+                <option value="SUI">SUI</option>
+              </select>
+            </div>
+            <div className="convert-input">
+              <input type="number" placeholder="0.00" />
+              <select name="" id="">
+                <option value="USDT">USDT</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="ALGO">ALGO</option>
+                <option value="THETA">THETA</option>
+                <option value="HBAR">HBAR</option>
+                <option value="ORDI">ORDI</option>
+                <option value="SUI">SUI</option>
+              </select>
+            </div>
+            <button className="convert-button">Convert</button>
+          </div>
+
+          <div className="assets">
+            <h2>Assets</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus inventore impedit est soluta possimus minima
+              aspernatur expe.
+            </p>
+          </div>
         </div>
       </div>
     </div>

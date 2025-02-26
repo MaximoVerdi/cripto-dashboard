@@ -80,30 +80,12 @@
 
 @media (max-width: 1350px) {
   .coins-section {
-    display: grid;
-    place-content: center;
-    gap: 15px;
     margin-top: 150px;
   }
   .coin {
-    display: grid;
     grid-template-columns: repeat(4, 80px);
-    align-items: center;
     gap: 150px;
-    border-bottom: 1px solid #666768;
-    padding-bottom: 20px;
   }
-
-  .volume {
-    display: none;
-  }
-}
-
-@media (max-width: 1350px) {
-  .coin {
-    grid-template-columns: repeat(4, 80px);
-  }
-
   .volume {
     display: none;
   }
@@ -111,26 +93,16 @@
 
 @media (max-width: 850px) {
   .coins-section {
-    display: grid;
-    place-content: center;
-    gap: 15px;
     margin-top: 0;
   }
   .coin {
     grid-template-columns: repeat(3, auto);
-    align-items: center;
     gap: 15vw;
   }
-
   .coin span {
     font-size: 1.4em;
-    font-weight: bold;
   }
-
-  .coin a {
-    display: none;
-  }
-
+  .coin a,
   .coins-section__text {
     display: none;
   }

@@ -1,5 +1,4 @@
 import "boxicons/css/boxicons.min.css";
-import "../components/index.css";
 import {
   Header,
   HeroSection,
