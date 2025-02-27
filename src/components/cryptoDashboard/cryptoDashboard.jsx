@@ -98,7 +98,7 @@ const CryptoDashboard = () => {
           <ul>
             <img
               // src="../node_modules/cryptocurrency-icons/svg/icon/btc.svg"
-              src="../../../node_modules/cryptocurrency-icons/svg/color/btc.svg"
+              src="/cryptocurrency-icons/svg/icon/btc.svg"
               alt=""
             />
             <p>BTCUSDT</p>
@@ -125,10 +125,7 @@ const CryptoDashboard = () => {
 
         <div className="crypto-dashboard__slider-item">
           <ul>
-            <img
-              src="../node_modules/cryptocurrency-icons/svg/icon/theta.svg"
-              alt=""
-            />
+            <img src="/cryptocurrency-icons/svg/icon/theta.svg" alt="" />
             <p>THETAUSDT</p>
           </ul>
           <span>${cryptoData?.THETA?.USDT?.PRICE.toLocaleString()}</span>
@@ -148,10 +145,7 @@ const CryptoDashboard = () => {
         </div>
         <div className="crypto-dashboard__slider-item">
           <ul>
-            <img
-              src="../node_modules/cryptocurrency-icons/svg/icon/eth.svg"
-              alt=""
-            />
+            <img src="/cryptocurrency-icons/svg/icon/eth.svg" alt="" />
             <p>ETHUSDT</p>
           </ul>
           <span>${cryptoData?.ETH?.USDT?.PRICE.toLocaleString()}</span>
