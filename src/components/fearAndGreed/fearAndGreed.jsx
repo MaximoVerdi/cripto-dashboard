@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./FearAndGreed.css"; // Archivo CSS para estilos
+import "./fearAndGreed.css";
 
 const FearAndGreed = () => {
   const [fearAndGreedData, setFearAndGreedData] = useState(null);
