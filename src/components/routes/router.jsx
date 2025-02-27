@@ -14,7 +14,7 @@ const Router = () => {
         <Route path="/apiData" element={<ApiData />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<DashboardLayout />}>
-          <Route index element={<Navigate to="crypto" replace />} />
+          <Route index element={<Navigate to="crypto" />} />
           <Route path="crypto" element={<CryptoDashboard />} />
           <Route path="stock" element={<StockDashboard />} />
         </Route>

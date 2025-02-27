@@ -1,0 +1,15 @@
+/* Estilos para el contenedor principal */
+.chart-container {
+  display: flex;
+  margin: auto;
+  width: 250px;
+  height: 100%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+/* Estilos para el contenedor del gráfico */
+.chart-wrapper {
+  margin: 15px auto;
+  width: 100%;
+}

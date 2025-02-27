@@ -2,12 +2,14 @@ import React from "react";
 import "./cryptoDashboard.css";
 import { TradingViewChart } from "../tradingviewChart/tradingviewChart";
 import { useEffect, useState } from "react";
+import { CryptoDoughnutChart } from "../CryptoDoughnutChart/cryptoDoughnutChart";
+import FearAndGreed from "../fearAndGreed/fearAndGreed";
 
 const CryptoDashboard = () => {
   const [cryptoData, setCryptoData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  // Llamada a la API de criptomonedas
+  // Llamada a API de criptomonedas
   useEffect(() => {
     const fetchCryptoPrice = async () => {
       try {
@@ -29,7 +31,6 @@ const CryptoDashboard = () => {
     fetchCryptoPrice();
   }, []);
 
-  // Renderizado condicional
   if (loading) {
     return <div className="bento-item">Cargando...</div>;
   }
@@ -118,27 +119,7 @@ const CryptoDashboard = () => {
         </div>
 
         <div className="crypto-dashboard__slider-item">
-          <ul>
-            <img
-              src="../node_modules/cryptocurrency-icons/svg/icon/algo.svg"
-              alt=""
-            />
-            <p>ALGOUSDT</p>
-          </ul>
-          <span>${cryptoData?.ALGO?.USDT?.PRICE.toLocaleString()}</span>
-          <ul>
-            <p className="profit">PNL Daily</p>
-            <p
-              className={`daily-change ${cryptoData?.ALGO?.USDT?.CHANGEPCT24HOUR < 0 ? `negative` : ``}`}
-            >
-              {cryptoData?.ALGO?.USDT?.CHANGE24HOUR.toLocaleString()}
-            </p>
-            <p
-              className={`pct-change ${cryptoData?.ALGO?.USDT?.CHANGEPCT24HOUR < 0 ? "negative" : ""}`}
-            >
-              {cryptoData?.ALGO?.USDT?.CHANGEPCT24HOUR.toLocaleString()}%
-            </p>
-          </ul>
+          <FearAndGreed />
         </div>
 
         <div className="crypto-dashboard__slider-item">
@@ -226,12 +207,7 @@ const CryptoDashboard = () => {
           </div>
 
           <div className="assets">
-            <h2>Assets</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus inventore impedit est soluta possimus minima
-              aspernatur expe.
-            </p>
+            <CryptoDoughnutChart />
           </div>
         </div>
       </div>

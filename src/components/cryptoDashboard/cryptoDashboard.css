@@ -31,6 +31,7 @@
 .crypto-dashboard__content {
   display: flex;
   padding: 30px;
+  padding-right: 60px;
   color: #fff;
   width: 100%;
   gap: 30px;
@@ -105,6 +106,7 @@
   gap: 15px;
   max-width: 250px;
   min-width: 250px;
+  height: 135px;
   background: var(--dashboard-nav-bg-color);
   padding: 12px;
   border-radius: 10px;
@@ -183,6 +185,8 @@
   max-width: 300px;
   height: 250px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -234,6 +238,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    margin: 0 auto;
   }
 
   .crypto-dashboard__info {
