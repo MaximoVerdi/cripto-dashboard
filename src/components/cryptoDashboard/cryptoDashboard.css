@@ -96,7 +96,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 20px;
-  overflow-x: auto;
+  overflow-y: hidden;
   margin: 30px;
 }
 
@@ -123,7 +123,7 @@
   font-weight: 500;
 }
 
-.crypto-dashboard__slider-item i {
+.crypto-dashboard__slider-item:first-child i {
   font-size: 25px;
   background: #24334d;
   color: var(--extra-light-color);

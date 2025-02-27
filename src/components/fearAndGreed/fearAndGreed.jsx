@@ -32,6 +32,9 @@ const FearAndGreed = () => {
 
   return (
     <div className="fear-and-greed-container">
+      <p>
+        Fear & Greed <i class="bx bx-chevron-right"></i>
+      </p>
       {/* Semicírculo */}
       <svg
         className="semi-circle"
@@ -65,7 +68,7 @@ const FearAndGreed = () => {
         />
         <path
           d="M 10 40 A 40 40 0 0 1 90 40"
-          stroke="#99cc33"
+          stroke="#1dae9b"
           strokeWidth="5"
           fill="none"
           strokeDasharray="31.42 125.66"
@@ -90,6 +93,7 @@ const FearAndGreed = () => {
       </svg>
 
       {/* Valor del índice */}
+
       <div className="value">{value}</div>
 
       {/* Clasificación */}

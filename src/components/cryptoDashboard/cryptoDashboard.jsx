@@ -4,6 +4,8 @@ import { TradingViewChart } from "../tradingviewChart/tradingviewChart";
 import { useEffect, useState } from "react";
 import { CryptoDoughnutChart } from "../CryptoDoughnutChart/cryptoDoughnutChart";
 import FearAndGreed from "../fearAndGreed/fearAndGreed";
+import { BitcoinDominance } from "../btcDominance/btcDominance";
+import { EthereumDominance } from "../ethDominance/ethDominance";
 
 const CryptoDashboard = () => {
   const [cryptoData, setCryptoData] = useState(null);
@@ -95,28 +97,8 @@ const CryptoDashboard = () => {
         </div>
 
         <div className="crypto-dashboard__slider-item">
-          <ul>
-            <img
-              // src="../node_modules/cryptocurrency-icons/svg/icon/btc.svg"
-              src="/cryptocurrency-icons/svg/icon/btc.svg"
-              alt=""
-            />
-            <p>BTCUSDT</p>
-          </ul>
-          <span>${cryptoData?.BTC?.USDT?.PRICE.toLocaleString()}</span>
-          <ul>
-            <p className="profit">PNL Daily</p>
-            <p
-              className={`daily-change ${cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR < 0 ? `negative` : ``}`}
-            >
-              {cryptoData?.BTC?.USDT?.CHANGE24HOUR.toLocaleString()}
-            </p>
-            <p
-              className={`pct-change ${cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR < 0 ? `negative` : ``}`}
-            >
-              {cryptoData?.BTC?.USDT?.CHANGEPCT24HOUR.toLocaleString()}%{" "}
-            </p>
-          </ul>
+          <BitcoinDominance />
+          <EthereumDominance />
         </div>
 
         <div className="crypto-dashboard__slider-item">

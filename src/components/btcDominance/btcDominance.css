@@ -1,0 +1,25 @@
+.btc-dominance {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btc-dominance p:first-child {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.btc-dominance p:first-child i {
+  margin-top: 5px;
+  color: var(--quaternary-color);
+}
+
+.btc-dominance p:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: -5px;
+}

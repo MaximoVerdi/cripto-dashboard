@@ -20,16 +20,16 @@ const CryptoDoughnutChart = () => {
         label: "Cantidad en USD",
         data: [5000, 3000, 1000, 1000], // Valores en USD
         backgroundColor: [
-          "rgba(255, 99, 132, 0.8)", // Neon Pink
-          "rgba(54, 162, 235, 0.8)", // Neon Blue
-          "rgba(255, 206, 86, 0.8)", // Neon Yellow
-          "rgba(75, 192, 192, 0.8)", // Neon Teal
+          "#b4354a", // Red
+          "#0ea4e8", // Blue
+          "rgb(255, 207, 86)", // Yellow
+          "#1dae9b", // Green
         ],
         borderColor: [
-          "rgba(255, 99, 132, 1)", // Borde Neon Pink
-          "rgba(54, 162, 235, 1)", // Borde Neon Blue
-          "rgba(255, 206, 86, 1)", // Borde Neon Yellow
-          "rgba(75, 192, 192, 1)", // Borde Neon Teal
+          "rgb(218, 49, 86)", // Red Border
+          "rgb(56, 175, 255)", // Borde Blue
+          "rgb(245, 178, 6)", // Yellow Border
+          "rgba(75, 192, 192, 1)", // Green Border
         ],
         borderWidth: 2,
         hoverOffset: 20,
@@ -37,7 +37,6 @@ const CryptoDoughnutChart = () => {
     ],
   };
 
-  // Opciones gráfico
   const options = {
     plugins: {
       legend: {
