@@ -97,7 +97,8 @@ const CryptoDashboard = () => {
         <div className="crypto-dashboard__slider-item">
           <ul>
             <img
-              src="../node_modules/cryptocurrency-icons/svg/icon/btc.svg"
+              // src="../node_modules/cryptocurrency-icons/svg/icon/btc.svg"
+              src="../../../node_modules/cryptocurrency-icons/svg/color/btc.svg"
               alt=""
             />
             <p>BTCUSDT</p>
