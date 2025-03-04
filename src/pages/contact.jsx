@@ -1,10 +1,11 @@
-
-
+import { Header, Form } from "../components/components";
 const Contact = () => {
-    return (
-        <>
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <Form />
+    </>
+  );
+};
 
 export { Contact };
