@@ -36,7 +36,7 @@
 .section-title {
     margin-bottom: 15px;
     margin-left: 15px;
-    color: var(--extra-light-color);
+    color: #fff;
 }
   
 .order-form {
@@ -63,6 +63,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    width: 100%;
 }
 
 .add-button:hover {

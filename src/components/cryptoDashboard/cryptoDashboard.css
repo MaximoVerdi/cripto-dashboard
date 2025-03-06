@@ -304,7 +304,7 @@
   .crypto-dashboard__content {
     display: flex;
     padding: 30px;
-    padding-right: 0px;
+    margin-right: 30px;
     color: #fff;
     width: 100%;
     gap: 30px;
