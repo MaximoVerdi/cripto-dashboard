@@ -168,7 +168,7 @@ const Bento = () => {
           <div className="news-container">
             <div className="news-item">
               <div className="news-image-container">
-                {currentArticle.imageurl ? (
+                {currentArticle ? (
                   <img
                     src={currentArticle.imageurl}
                     alt={currentArticle.title}

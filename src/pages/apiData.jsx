@@ -6,6 +6,7 @@ import {
   Coins,
   InfoSection,
   FAQ,
+  OrdersCrypto
 } from "../components/components.jsx";
 import { DashboardLayout } from "../components/dashboardLayout";
 import "../components/index.css";

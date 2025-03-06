@@ -6,6 +6,7 @@ import { CryptoDoughnutChart } from "../CryptoDoughnutChart/cryptoDoughnutChart"
 import FearAndGreed from "../fearAndGreed/fearAndGreed";
 import { BitcoinDominance } from "../btcDominance/btcDominance";
 import { EthereumDominance } from "../ethDominance/ethDominance";
+import { OrdersCrypto } from "../ordersCrypto/ordersCrypto";
 
 const CryptoDashboard = () => {
   const [cryptoData, setCryptoData] = useState(null);
@@ -188,6 +189,7 @@ const CryptoDashboard = () => {
           </div>
         </div>
       </div>
+      <OrdersCrypto />
     </div>
   );
 };

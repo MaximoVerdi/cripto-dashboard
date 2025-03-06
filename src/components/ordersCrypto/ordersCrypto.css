@@ -1,0 +1,194 @@
+.dashboard-container {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin-bottom: 100px;
+    width: 100%;  /* Añadido para asegurar que se adapte en pantallas pequeñas */
+}
+  
+.tab-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.tab-container button {
+    background: var(--dashboard-nav-bg-color);
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color);  
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-left: 15px;
+}
+
+.tab-container button.active {
+    background: var(--extra-light-color);
+    color: white;
+    border: 1px solid var(--extra-light-color);  
+}
+  
+.section-title {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: var(--extra-light-color);
+}
+  
+.order-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.order-form input {
+    padding: 10px;
+    border: 1px solid #ddd;  
+    border-radius: 5px;
+    background: var(--dashboard-nav-bg-color);
+    color: white;
+}
+
+.add-button {
+    background: var(--green-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-button:hover {
+    background: #168974;
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.order-item {
+    background: var(--dashboard-nav-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.order-actions button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.close-button {
+    background: var(--green-color);
+    color: white;
+}
+  
+.delete-button {
+    background: var(--red-color) !important;
+    color: white;
+}
+  
+.total-profit {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--green-color);
+    margin-top: 20px;
+}
+
+.order-table-wrapper {
+    overflow-x: auto; /* Añadir desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Hacer que el desplazamiento sea más suave en dispositivos móviles */
+}
+
+.order-table {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-collapse: collapse;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd; 
+    padding: 10px;
+    text-align: left;
+}
+
+.order-table th {
+    font-weight: bold;
+    background: #fff; 
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    .tab-container {
+        flex-direction: column; /* Los botones se apilan en dispositivos móviles */
+        align-items: center; /* Centrar los botones */
+    }
+
+    .order-form input {
+        width: 100%; /* Hacer que los inputs ocupen todo el ancho */
+        margin-bottom: 10px; /* Espacio entre inputs */
+    }
+
+    .order-item {
+        flex-direction: column; /* Los items se apilan */
+        align-items: flex-start; /* Alinear los elementos al principio */
+    }
+
+    .order-actions {
+        justify-content: space-evenly; /* Alinear los botones de acciones a la izquierda */
+        width: 100%; /* Los botones ocupan todo el ancho */
+        margin-top: 10px;
+    }
+
+    .order-actions button {
+        margin-right: 10px; /* Espacio entre los botones */
+    }
+
+    .order-table {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 15px; /* Reducir el padding en pantallas muy pequeñas */
+    }
+
+    .tab-container {
+    justify-content: center; /* Centrar los botones en pantallas pequeñas */
+    }
+
+    .tab-container button {
+        width: 100%; /* Hacer que los botones ocupen todo el ancho */
+        padding: 12px; /* Aumentar el tamaño de los botones */
+        margin-left: 0; /* Eliminar margen entre botones */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+
+    .order-item {
+        padding: 15px; /* Aumentar el padding de cada ítem */
+    }
+
+    .order-table th, .order-table td {
+        padding: 8px; /* Reducir padding de la tabla */
+    }
+}

@@ -1,9 +1,10 @@
-import { Header, Form } from "../components/components";
+import { Header, Form, FAQ } from "../components/components";
 const Contact = () => {
   return (
     <>
       <Header />
       <Form />
+      <FAQ />
     </>
   );
 };
