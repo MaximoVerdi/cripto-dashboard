@@ -174,7 +174,6 @@
 
 .crypto-dashboard__info {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -226,6 +225,13 @@
   background: #0ea3e8aa;
 }
 
+
+@media  screen and (min-width: 1026px) {
+  .crypto-dashboard__info {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .crypto-dashboard__slider {
     margin-bottom: 0;
@@ -267,8 +273,7 @@
 
   .assets,
   .convert {
-    width: 100%;
-    max-width: 100%;
+    margin: auto;
   }
 }
 
@@ -294,4 +299,15 @@
   .bx-brightness {
     display: none;
   }
+
+
+  .crypto-dashboard__content {
+    display: flex;
+    padding: 30px;
+    padding-right: 0px;
+    color: #fff;
+    width: 100%;
+    gap: 30px;
+  }
+
 }
