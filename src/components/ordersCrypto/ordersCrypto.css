@@ -13,7 +13,6 @@
     gap: 30px;
     margin-bottom: 20px;
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: center; /* Centrar los botones en pantallas pequeñas */
 }
 
 .tab-container button {
@@ -90,6 +89,7 @@
 .order-actions {
     display: flex;
     justify-content: space-evenly;
+    gap: 5px;
 }
 
 .order-actions button {
@@ -121,6 +121,7 @@
     overflow-x: auto; /* Activa el desplazamiento horizontal */
     -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos iOS */
     margin-top: 20px; /* Agregar espacio por encima de la tabla */
+    margin-left: 15px;
 }
 
 .order-table {
@@ -134,10 +135,17 @@
     text-align: left;
 }
 
-.order-table th {
+.order-table thead {
+    background-color: #fff;
+    color: #010118 !important;
     font-weight: bold;
-    background: #fff; 
-    color: var(--bg-color);
+
+}
+
+@media screen and (min-width: 769px) {
+    .add-button {
+        width: fit-content;
+    }
 }
 
 @media (max-width: 768px) {
@@ -157,7 +165,7 @@
     }
 
     .order-actions {
-        justify-content: flex-start; /* Alinear los botones de acciones a la izquierda */
+        justify-content: space-evenly; /* Alinear los botones de acciones a la izquierda */
         width: 100%; /* Los botones ocupan todo el ancho */
         margin-top: 10px;
     }
