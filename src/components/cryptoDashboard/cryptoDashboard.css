@@ -1,8 +1,6 @@
 .crypto-dashboard {
   width: calc(100% - 220px);
-  background: var(--dashboard-bg-color);
   margin-left: 220px;
-  overflow-x: hidden;
 }
 
 .crypto-dashboard__widgets {

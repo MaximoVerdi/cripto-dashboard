@@ -1,10 +1,11 @@
+
 .dashboard-container {
     color: white;
     padding: 20px;
     border-radius: 10px;
     max-width: 1100px;
     margin-bottom: 100px;
-    width: 100%;  /* Añadido para asegurar que se adapte en pantallas pequeñas */
+    width: 100%;  /* Asegura que el contenedor sea responsive */
 }
   
 .tab-container {
@@ -12,6 +13,7 @@
     gap: 30px;
     margin-bottom: 20px;
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centrar los botones en pantallas pequeñas */
 }
 
 .tab-container button {
@@ -112,15 +114,16 @@
     margin-top: 20px;
 }
 
+/* Contenedor que permite el desplazamiento horizontal */
 .order-table-wrapper {
-    overflow-x: auto; /* Añadir desplazamiento horizontal */
-    -webkit-overflow-scrolling: touch; /* Hacer que el desplazamiento sea más suave en dispositivos móviles */
+    width: 100%;
+    overflow-x: auto; /* Activa el desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos iOS */
+    margin-top: 20px; /* Agregar espacio por encima de la tabla */
 }
 
 .order-table {
     width: 100%;
-    margin-top: 20px;
-    margin-left: 15px;
     border-collapse: collapse;
 }
 
@@ -153,7 +156,7 @@
     }
 
     .order-actions {
-        justify-content: space-evenly; /* Alinear los botones de acciones a la izquierda */
+        justify-content: flex-start; /* Alinear los botones de acciones a la izquierda */
         width: 100%; /* Los botones ocupan todo el ancho */
         margin-top: 10px;
     }
@@ -162,8 +165,11 @@
         margin-right: 10px; /* Espacio entre los botones */
     }
 
+    .order-table-wrapper {
+        margin-left: 0; /* Eliminar margen izquierdo */
+    }
+
     .order-table {
-        margin-left: 0; /* Eliminar el margen izquierdo */
         font-size: 0.9em; /* Reducir el tamaño de la fuente */
     }
 }
@@ -171,10 +177,6 @@
 @media (max-width: 480px) {
     .dashboard-container {
         padding: 15px; /* Reducir el padding en pantallas muy pequeñas */
-    }
-
-    .tab-container {
-    justify-content: center; /* Centrar los botones en pantallas pequeñas */
     }
 
     .tab-container button {

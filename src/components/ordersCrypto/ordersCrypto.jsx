@@ -83,6 +83,7 @@ const OrdersCrypto = () => {
             </div>
           )}
 
+          <div className="oder-table-wrapper">
           <table className="order-table">
             <thead>
               <tr>
@@ -100,7 +101,7 @@ const OrdersCrypto = () => {
                   <td>{order.coin}</td>
                   <td>${order.buyPrice}</td>
                   <td>${order.investment}</td>
-                  <td>{order.amount.toFixed(6)}</td>
+                  <td>{order.amount}</td>
                   <td>{order.date}</td>
                   <td>
                     <div className="order-actions">
@@ -113,12 +114,14 @@ const OrdersCrypto = () => {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       )}
 
       {activeTab === "closed" && (
         <div>
           <h2 className="section-title">Órdenes Cerradas</h2>
+          <div className="order-table-wrapper">
           <table className="order-table">
             <thead>
               <tr>
@@ -140,7 +143,7 @@ const OrdersCrypto = () => {
                   <td>${order.buyPrice}</td>
                   <td>${order.sellPrice}</td>
                   <td>${order.investment}</td>
-                  <td>{order.amount.toFixed(6)}</td>
+                  <td>{order.amount}</td>
                   <td>{order.date}</td>
                   <td>{order.closeDate}</td>
                   <td>${(order.sellPrice - order.buyPrice) * order.amount}</td>
@@ -152,6 +155,7 @@ const OrdersCrypto = () => {
               ))}
             </tbody>
           </table>
+          </div>
           <h3 className="total-profit">Total Ganado: ${totalProfit.toFixed(2)}</h3>
         </div>
       )}
