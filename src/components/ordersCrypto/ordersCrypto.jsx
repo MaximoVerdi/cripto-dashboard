@@ -73,7 +73,7 @@ const OrdersCrypto = () => {
                 <input type="number" placeholder="Precio de Compra" value={editingOrder.buyPrice} onChange={(e) => setEditingOrder({ ...editingOrder, buyPrice: parseFloat(e.target.value) })} />
                 <input type="number" placeholder="Dinero invertido" value={editingOrder.investment} onChange={(e) => setEditingOrder({ ...editingOrder, investment: parseFloat(e.target.value) })} />
                 <input type="number" placeholder="Cantidad" value={editingOrder.amount} onChange={(e) => setEditingOrder({ ...editingOrder, amount: parseFloat(e.target.value) })} />
-                <input type="date" value={editingOrder.date} onChange={(e) => setEditingOrder({ ...editingOrder, date: e.target.value })} />
+                <input type="date" id="datepicker" value={editingOrder.date} onChange={(e) => setEditingOrder({ ...editingOrder, date: e.target.value })} />
                 <button onClick={() => editOrder(editingOrder.id, editingOrder)} className="add-button">Guardar Cambios</button>
                 <button onClick={() => setEditingOrder(null)} className="cancel-button">Cancelar</button>
               </div>

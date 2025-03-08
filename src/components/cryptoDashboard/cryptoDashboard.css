@@ -1,6 +1,8 @@
 .crypto-dashboard {
   width: calc(100% - 220px);
   margin-left: 220px;
+  padding-bottom: 60px;
+  background-color: var(--body-color);
 }
 
 .crypto-dashboard__widgets {
@@ -8,7 +10,7 @@
   justify-content: space-between;
   width: 100%;
   gap: 20px;
-  background: var(--dashboard-nav-bg-color);
+  background: var(--db-nav-bg-color);
   height: 12vh;
   padding: 0 50px;
 }
@@ -20,17 +22,26 @@
   list-style: none;
 }
 
+.crypto-dashboard__widgets-list button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0;
+  font-size: inherit;
+}
+
 .crypto-dashboard__widgets-list li i,
 .convert-button {
   transition: 0.2s;
   cursor: pointer;
+  color:var(--color-text);
 }
 
 .crypto-dashboard__content {
   display: flex;
   padding: 30px;
   padding-right: 60px;
-  color: #fff;
+  color: var(--color-text);
   width: 100%;
   gap: 30px;
 }
@@ -57,19 +68,24 @@
 }
 
 .input-search {
-  color: var(--color-text);
+  color: #fff;
   border-radius: 20px;
-  border-left: 1px solid var(--color-text);
-  background-color: var(--dashboard-nav-bg-color);
+  background-color: var(--db-nav-bg-color);
+  border-left: 1px solid #fff;
+}
+
+.input-search::placeholder {
+  color: #ccc;
 }
 
 .lupita {
   display: flex;
   align-items: center;
-  background: var(--dashboard-nav-bg-color);
-  color: var(--color-text);
+  background: var(--db-nav-bg-color);
+  color: #fff;
   border-radius: 20px;
   border : 1px solid var(--color-text);
+
 }
 
 .lupita i {
@@ -108,7 +124,7 @@
   max-width: 250px;
   min-width: 250px;
   height: 135px;
-  background: var(--dashboard-bg-color);
+  background: var(--db-bg-color);
   padding: 12px;
   border-radius: 10px;
   color: var(--color-text);
@@ -168,7 +184,7 @@
 .assets {
   padding: 20px;
   border-radius: 20px;
-  background: var(--dashboard-bg-item);
+  background: var(--db-bg-item);
   color: var(--color-text);
   box-shadow: 0 0 10px #00000021;
 }
@@ -214,7 +230,7 @@
 .convert-input input {
   width: 90%;
   padding: 10px 15px;
-  background: var(--dashboard-bg-color);
+  background: var(--db-bg-color);
   color: var(--color-text);
 }
 
@@ -263,7 +279,7 @@
     max-width: 300px;
     padding: 20px;
     border-radius: 20px;
-    background: var(--dashboard-nav-bg-color);
+    background: var(--db-nav-bg-color);
   }
 }
 

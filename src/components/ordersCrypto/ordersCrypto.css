@@ -54,6 +54,18 @@
     color: white;
 }
 
+.order-form input::placeholder {
+    color: #aaa;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    border-radius: 20%;
+    color: white;
+    padding: 5px;
+}
+  
+
 .add-button {
     background: var(--green-color);
     color: white;

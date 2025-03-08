@@ -6,17 +6,18 @@
   gap: 5em;
   min-width: 220px;
   height: 100vh;
-  background-color: var(--dashboard-nav-bg-color);
+  background-color: var(--db-nav-bg-color);
   position: fixed;
   z-index: 100;
   transition: transform 0.3s ease;
+  box-shadow: 10px 0 10px #0000000c;
 }
 
 .sidebar__title {
   text-align: center;
   margin-top: 40px;
   font-size: 0.8em;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .sidebar-nav__list {
@@ -37,11 +38,11 @@
 
 .sidebar-nav__item i {
   margin-top: 3px;
-  color: #dddddd;
+  color: var(--color-text);
 }
 
 .sidebar-nav__item-link {
-  color: #dddddd;
+  color: var(--color-text);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -75,7 +76,7 @@
   position: fixed;
   top: 25px;
   left: 13px;
-  background-color: var(--dashboard-nav-bg-color);
+  background-color: var(--db-nav-bg-color);
   color: #fff;
   border: none;
   padding: 10px;
@@ -86,7 +87,7 @@
 @media screen and (max-width: 768px) {
   .hamburger-btn {
     display: block;
-    background-color: var(--dashboard-nav-bg-color);
+    background-color: var(--db-nav-bg-color);
     border-radius: 10px;
     width: 40px;
   }
