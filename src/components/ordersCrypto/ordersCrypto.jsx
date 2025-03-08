@@ -103,7 +103,7 @@ const OrdersCrypto = () => {
                   {orders.filter(order => !order.closed).map(order => (
                     <tr key={order.id}>
                       <td>{order.coin}</td>
-                      <td>{`$${formatPrice(order.buyPrice).toFixed(2)}`}</td> {/* Usamos la función formatPrice */}
+                      <td>{`$${formatPrice(order.buyPrice).toFixed(2)}`}</td>
                       <td>{`$${formatPrice(order.investment).toFixed(2)}`}</td>
                       <td>{formatPrice(order.amount).toFixed(2)}</td>
                       <td>{order.date}</td>

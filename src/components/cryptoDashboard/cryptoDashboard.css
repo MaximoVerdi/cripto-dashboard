@@ -35,6 +35,11 @@
   transition: 0.2s;
   cursor: pointer;
   color:var(--color-text);
+  transition: .2s;
+}
+
+.bx-brightness:hover {
+  transform: scale(1.2) rotate(30deg);
 }
 
 .crypto-dashboard__content {
@@ -311,15 +316,14 @@
   }
 
   .crypto-dashboard__widgets-list {
-    gap: 5px;
+    gap: 8px;
   }
 
   .bx-notepad,
   .bx-align-left,
   .bx-message-square,
   .bx-bell,
-  .bx-user,
-  .bx-brightness {
+  .bx-user {
     display: none;
   }
 
@@ -333,4 +337,25 @@
     gap: 30px;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+
+  .crypto-dashboard__widgets {
+    justify-content: center;
+    padding: 0;
+  }
+
+
+  .crypto-dashboard__widgets-list {
+    justify-content: space-between;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .bx-message-square,
+  .bx-user,
+  .bx-notepad {
+    display: block;
+  }
 }

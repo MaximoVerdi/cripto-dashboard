@@ -51,7 +51,7 @@
     border: 1px solid var(--color-text);  
     border-radius: 5px;
     background: var(--dashboard-nav-bg-color);
-    color: white;
+    color: var(--color-text);
 }
 
 .order-form input::placeholder {
@@ -59,9 +59,8 @@
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    background-color: #fff;
+    background-color: #f4f4ff;
     border-radius: 20%;
-    color: white;
     padding: 5px;
 }
   
@@ -101,23 +100,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .order-actions {
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
 }
 
 .order-actions button {
     padding: 5px;
-    border: none;
     border-radius: 5px;
 }
 
 .close-button {
     background: var(--green-color);
     color: white;
+    border: none;
 }
   
 .delete-button {
-    background: var(--red-color) !important;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: var(--red-color);
     color: white;
+}
+
+.delete-button:nth-child(2) {
+    margin-left: 10px;
+}
+
+.edit-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
 }
   
 .total-profit {
@@ -148,8 +159,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .order-table thead {
-    background-color: #fff;
-    color: #010118 !important; 
+    background-color: #f4f4ff;
+    color: #010118 ; 
     font-weight: bold;
 
 }

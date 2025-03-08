@@ -30,7 +30,7 @@ const Nav = () => {
                       <Link className='nav-item-link' to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className='nav-item-link' to="/apiData">Dashboard</Link>
+                      <Link className='nav-item-link' to="/dashboard/crypto">Dashboard</Link>
                     </li>
                     <li className="nav-item">
                       <Link className='nav-item-link' to="/contact">Contact</Link>
