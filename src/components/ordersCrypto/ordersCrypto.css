@@ -162,7 +162,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f4f4ff;
     color: #010118 ; 
     font-weight: bold;
-
 }
 
 @media screen and (min-width: 769px) {

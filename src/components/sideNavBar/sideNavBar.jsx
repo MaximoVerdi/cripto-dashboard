@@ -17,7 +17,7 @@ const SideNavBar = () => {
 
       <nav className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar__title">
-          <h2>FinTrack Hub</h2>
+          <Link to="/">FinTrack Hub</Link>
         </div>
         <ul className="sidebar-nav__list">
           <li className="sidebar-nav__item">

@@ -27,7 +27,7 @@
   --grey-color: #b5b5b5;
   --green-color: #1dae9b;
   --red-color: #b4354a;
-  --body-color: rgba(1, 1, 24, 1);
+  --body-color: rgb(1, 1, 17);
   --db-bg-item: #13121a;
   --color-text: #fff;
 }
@@ -38,11 +38,6 @@
   --bg-color: #010118;
   --light-color: #0b1527;
   --extra-light-color: #0ea4e8;
-  --box-shadow: rgba(14, 163, 232, 0.459);
-  --quaternary-color: #6c757d;
-  --grey-color: #b5b5b5;
-  --green-color: #1dae9b;
-  --red-color: #b4354a;
   --body-color: rgb(245, 245, 255);
   --db-bg-item: #ffffff;
   --color-text: #000;

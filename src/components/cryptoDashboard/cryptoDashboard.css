@@ -148,7 +148,6 @@
 
 .crypto-dashboard__slider-item:first-child i {
   font-size: 25px;
-  background: #24334d;
   color: var(--extra-light-color);
   padding: 3px 2px;
   border-radius: 5px;
@@ -220,6 +219,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  border-radius: 5px;
 }
 
 .convert-input select {
@@ -233,10 +233,11 @@
 }
 
 .convert-input input {
-  width: 90%;
+  width: 100%;
   padding: 10px 15px;
   background: var(--db-bg-color);
   color: var(--color-text);
+  border: 1px solid #ffffff1c;
 }
 
 .convert-button {
