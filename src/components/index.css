@@ -27,10 +27,28 @@
   --grey-color: #b5b5b5;
   --green-color: #1dae9b;
   --red-color: #b4354a;
+  --body-color: rgba(1, 1, 24, 1);
+  --dashboard-bg-item: #13121a;
+  --color-text: #fff;
 }
 
+[data-theme="dark"] {
+  --dashboard-bg-color: #ffffff;
+  --dashboard-nav-bg-color: #0ea4e8;
+  --bg-color: #42cf42;
+  --light-color: #0b1527;
+  --extra-light-color: #0ea4e8;
+  --box-shadow: rgba(14, 163, 232, 0.459);
+  --quaternary-color: #6c757d;
+  --grey-color: #b5b5b5;
+  --green-color: #1dae9b;
+  --red-color: #b4354a;
+  --body-color: rgb(245, 245, 255);
+  --dashboard-bg-item: #ffffff;
+  --color-text: #000;
+}
 body {
-  background-color: rgba(1, 1, 24, 1);
+  background-color: var(--body-color);
   color: #fff;
 }
 

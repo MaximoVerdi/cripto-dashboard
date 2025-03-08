@@ -57,16 +57,19 @@
 }
 
 .input-search {
-  color: var(--bg-color);
+  color: var(--color-text);
   border-radius: 20px;
+  border-left: 1px solid var(--color-text);
+  background-color: var(--dashboard-nav-bg-color);
 }
 
 .lupita {
   display: flex;
   align-items: center;
-  background: #fff;
-  color: #000;
+  background: var(--dashboard-nav-bg-color);
+  color: var(--color-text);
   border-radius: 20px;
+  border : 1px solid var(--color-text);
 }
 
 .lupita i {
@@ -105,9 +108,10 @@
   max-width: 250px;
   min-width: 250px;
   height: 135px;
-  background: var(--dashboard-nav-bg-color);
+  background: var(--dashboard-bg-color);
   padding: 12px;
   border-radius: 10px;
+  color: var(--color-text);
 }
 
 .crypto-dashboard__slider-item ul {
@@ -164,12 +168,15 @@
 .assets {
   padding: 20px;
   border-radius: 20px;
-  background: var(--dashboard-nav-bg-color);
+  background: var(--dashboard-bg-item);
+  color: var(--color-text);
+  box-shadow: 0 0 10px #00000021;
 }
 
 .crypto-dashboard__graph {
   flex: 1;
   min-width: calc(100% - 300px);
+  
 }
 
 .crypto-dashboard__info {
@@ -208,7 +215,7 @@
   width: 90%;
   padding: 10px 15px;
   background: var(--dashboard-bg-color);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .convert-button {

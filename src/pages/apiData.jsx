@@ -6,7 +6,8 @@ import {
   Coins,
   InfoSection,
   FAQ,
-  OrdersCrypto
+  OrdersCrypto,
+  ThemeProvider
 } from "../components/components.jsx";
 import { DashboardLayout } from "../components/dashboardLayout";
 import "../components/index.css";
@@ -14,7 +15,9 @@ import "../components/index.css";
 const ApiData = () => {
   return (
     <>
-      <DashboardLayout />
+      <ThemeProvider >
+        <DashboardLayout />
+      </ThemeProvider>
     </>
   );
 };

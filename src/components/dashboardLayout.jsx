@@ -4,6 +4,7 @@ import { SideNavBar } from "./sideNavBar/sideNavBar";
 import "./dashboardLayout.css";
 
 const DashboardLayout = () => {
+  
   return (
     <div className="dashboard-layout">
       <div className="dashboard-content">

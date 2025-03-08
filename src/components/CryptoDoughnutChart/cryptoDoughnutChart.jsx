@@ -2,18 +2,21 @@ import React from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import "./cryptoDoughnut.css";
+import "../index.css";
+import { useTheme } from "../themeContext/themeContext"
 
 // Registrar los componentes necesarios de Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const CryptoDoughnutChart = () => {
+    const { theme, toggleTheme } = useTheme();
   // Datos de ejemplo: criptomonedas y sus cantidades
   const data = {
     labels: [
+      "ORDI (ORDI)",
       "Bitcoin (BTC)",
-      "Ethereum (ETH)",
-      "Cardano (ADA)",
-      "Solana (SOL)",
+      "HBAR (HBAR)",
+      "GAS (GAS)",
     ],
     datasets: [
       {
@@ -26,13 +29,13 @@ const CryptoDoughnutChart = () => {
           "#1dae9b", // Green
         ],
         borderColor: [
-          "rgb(218, 49, 86)", // Red Border
-          "rgb(56, 175, 255)", // Borde Blue
-          "rgb(245, 178, 6)", // Yellow Border
-          "rgba(75, 192, 192, 1)", // Green Border
+          "#b4354a", // Red
+          "#0ea4e8", // Blue
+          "rgb(255, 207, 86)", // Yellow
+          "#1dae9b", // Green
         ],
         borderWidth: 2,
-        hoverOffset: 20,
+        hoverOffset: 0,
       },
     ],
   };
@@ -42,7 +45,7 @@ const CryptoDoughnutChart = () => {
       legend: {
         position: "bottom",
         labels: {
-          color: "#FFFFFF",
+          color: theme === "light" ? "#fff" : "#000",
           font: {
             size: 12,
             family: "'Poppins', sans-serif",

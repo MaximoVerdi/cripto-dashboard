@@ -1,18 +1,18 @@
 
 .dashboard-container {
-    color: white;
+    color: var(--color-text);
     padding: 20px;
     border-radius: 10px;
     max-width: 1100px;
     margin-bottom: 100px;
-    width: 100%;  /* Asegura que el contenedor sea responsive */
+    width: 100%; 
 }
   
 .tab-container {
     display: flex;
     gap: 30px;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .tab-container button {
@@ -35,7 +35,7 @@
 .section-title {
     margin-bottom: 15px;
     margin-left: 15px;
-    color: #fff;
+    color: var(--color-text);
 }
   
 .order-form {
@@ -48,7 +48,7 @@
 
 .order-form input {
     padding: 10px;
-    border: 1px solid #ddd;  
+    border: 1px solid var(--color-text);  
     border-radius: 5px;
     background: var(--dashboard-nav-bg-color);
     color: white;
@@ -118,9 +118,9 @@
 /* Contenedor que permite el desplazamiento horizontal */
 .order-table-wrapper {
     width: 100%;
-    overflow-x: auto; /* Activa el desplazamiento horizontal */
+    overflow-x: auto; 
     -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos iOS */
-    margin-top: 20px; /* Agregar espacio por encima de la tabla */
+    margin-top: 20px; 
     margin-left: 15px;
 }
 
@@ -137,7 +137,7 @@
 
 .order-table thead {
     background-color: #fff;
-    color: #010118 !important;
+    color: #010118 !important; 
     font-weight: bold;
 
 }
@@ -150,56 +150,56 @@
 
 @media (max-width: 768px) {
     .tab-container {
-        flex-direction: column; /* Los botones se apilan en dispositivos móviles */
-        align-items: center; /* Centrar los botones */
+        flex-direction: column;
+        align-items: center;
     }
 
     .order-form input {
-        width: 100%; /* Hacer que los inputs ocupen todo el ancho */
-        margin-bottom: 10px; /* Espacio entre inputs */
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .order-item {
-        flex-direction: column; /* Los items se apilan */
-        align-items: flex-start; /* Alinear los elementos al principio */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .order-actions {
-        justify-content: space-evenly; /* Alinear los botones de acciones a la izquierda */
-        width: 100%; /* Los botones ocupan todo el ancho */
+        justify-content: space-evenly;
+        width: 100%;
         margin-top: 10px;
     }
 
     .order-actions button {
-        margin-right: 10px; /* Espacio entre los botones */
+        margin-right: 10px;
     }
 
     .order-table-wrapper {
-        margin-left: 0; /* Eliminar margen izquierdo */
+        margin-left: 0;
     }
 
     .order-table {
-        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+        font-size: 0.9em;
     }
 }
 
 @media (max-width: 480px) {
     .dashboard-container {
-        padding: 15px; /* Reducir el padding en pantallas muy pequeñas */
+        padding: 15px;
     }
 
     .tab-container button {
-        width: 100%; /* Hacer que los botones ocupen todo el ancho */
-        padding: 12px; /* Aumentar el tamaño de los botones */
-        margin-left: 0; /* Eliminar margen entre botones */
-        margin-bottom: 10px; /* Espacio entre botones */
+        width: 100%;
+        padding: 12px;
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .order-item {
-        padding: 15px; /* Aumentar el padding de cada ítem */
+        padding: 15px; 
     }
 
     .order-table th, .order-table td {
-        padding: 8px; /* Reducir padding de la tabla */
+        padding: 8px; 
     }
 }

@@ -1,10 +1,14 @@
 import React, { useEffect } from "react";
+import { useTheme } from "../themeContext/themeContext"; // 🔥 Importa el contexto
 
 const TradingViewChart = () => {
+  const { theme } = useTheme(); // 🔥 Obtén el tema actual
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://s3.tradingview.com/tv.js";
     script.async = true;
+
     script.onload = () => {
       new window.TradingView.widget({
         container_id: "tradingview_chart",
@@ -13,7 +17,7 @@ const TradingViewChart = () => {
         symbol: "BINANCE:BTCUSDT",
         interval: "1",
         timezone: "Etc/UTC",
-        theme: "light",
+        theme: theme === "light" ? "dark" : "light", // 🔥 Cambia el tema según el estado
         style: "1",
         locale: "es",
         toolbar_bg: "red",
@@ -35,7 +39,7 @@ const TradingViewChart = () => {
     return () => {
       document.body.removeChild(script);
     };
-  }, []);
+  }, [theme]); // 🔥 Dependencia de `theme`, se ejecuta cuando el tema cambia
 
   return <div id="tradingview_chart"></div>;
 };

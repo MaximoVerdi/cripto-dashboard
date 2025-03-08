@@ -7,8 +7,11 @@ import FearAndGreed from "../fearAndGreed/fearAndGreed";
 import { BitcoinDominance } from "../btcDominance/btcDominance";
 import { EthereumDominance } from "../ethDominance/ethDominance";
 import { OrdersCrypto } from "../ordersCrypto/ordersCrypto";
+import { useTheme } from "../themeContext/themeContext"
+import "../index.css"
 
 const CryptoDashboard = () => {
+  const { theme, toggleTheme } = useTheme();
   const [cryptoData, setCryptoData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -47,7 +50,7 @@ const CryptoDashboard = () => {
   }
 
   return (
-    <div className="crypto-dashboard">
+    <div className={`crypto-dashboard ${theme}`}>
       <div className="crypto-dashboard__widgets">
         <ul className="crypto-dashboard__widgets-list">
           <li>
@@ -76,7 +79,7 @@ const CryptoDashboard = () => {
             <i class="bx bx-user"></i>
           </li>
           <li>
-            <i className="bx bx-brightness"></i>
+            <button onClick={toggleTheme}><i className="bx bx-brightness"></i></button>
           </li>
           <li>
             <i className="bx bx-cog"></i>
