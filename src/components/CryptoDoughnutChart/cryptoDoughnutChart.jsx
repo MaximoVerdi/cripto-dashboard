@@ -23,13 +23,13 @@ const CryptoDoughnutChart = () => {
         label: "Cantidad en USD",
         data: [5000, 3000, 1000, 1000], // Valores en USD
         backgroundColor: [
-          "#b4354a", // Red
+          "#ff4d4d", // Red
           "#0ea4e8", // Blue
           "rgb(255, 207, 86)", // Yellow
           "#1dae9b", // Green
         ],
         borderColor: [
-          "#b4354a", // Red
+          "#ff4d4d", // Red
           "#0ea4e8", // Blue
           "rgb(255, 207, 86)", // Yellow
           "#1dae9b", // Green

@@ -101,13 +101,14 @@ const CryptoDashboard = () => {
         </div>
 
         <div className="crypto-dashboard__slider-item">
+          <FearAndGreed />
+        </div>
+
+        <div className="crypto-dashboard__slider-item">
           <BitcoinDominance />
           <EthereumDominance />
         </div>
 
-        <div className="crypto-dashboard__slider-item">
-          <FearAndGreed />
-        </div>
 
         <div className="crypto-dashboard__slider-item">
           <ul>

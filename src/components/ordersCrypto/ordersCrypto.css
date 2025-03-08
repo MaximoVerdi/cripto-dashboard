@@ -173,7 +173,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 768px) {
     .tab-container {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -212,10 +211,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .tab-container button {
-        width: 100%;
-        padding: 12px;
-        margin-left: 0;
+        padding: 10px;
         margin-bottom: 10px;
+    }
+
+    .tab-container {
+        gap: 0px;
     }
 
     .order-item {
