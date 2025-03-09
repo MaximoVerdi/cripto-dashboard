@@ -92,7 +92,7 @@ const OrdersCrypto = () => {
                 <thead>
                   <tr>
                     <th>Moneda</th>
-                    <th>Precio Compra</th>
+                    <th>Precio |Compra</th>
                     <th>Inversión</th>
                     <th>Cantidad</th>
                     <th>Fecha</th>

@@ -166,27 +166,27 @@ const Bento = () => {
 
         <div className="bento-item third-item" data-aos="fade-up">
           <div className="news-container">
-            <div className="news-item">
-              <div className="news-image-container">
-                {currentArticle ? (
-                  <img
-                    src={currentArticle.imageurl}
-                    alt={currentArticle.title}
-                    className="news-image"
-                  />
-                ) : (
-                  <p className="no-image-message">No image available</p>
-                )}
-              </div>
-              <h3>{currentArticle.title}</h3>
-              <a
-                href={currentArticle.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+          <div className="news-item">
+            <div className="news-image-container">
+              {currentArticle?.imageurl ? (
+                <img
+                  src={currentArticle.imageurl}
+                  alt={currentArticle.title ?? "Sin título"}
+                  className="news-image"
+                />
+              ) : (
+                <p className="no-image-message">No image available</p>
+              )}
+            </div>
+            <h3>{currentArticle?.title ?? "Sin título"}</h3>
+            {currentArticle?.url ? (
+              <a href={currentArticle.url} target="_blank" rel="noopener noreferrer">
                 Leer más
               </a>
-            </div>
+            ) : (
+              <p>No hay enlace disponible</p>
+            )}
+          </div>
           </div>
         </div>
 
