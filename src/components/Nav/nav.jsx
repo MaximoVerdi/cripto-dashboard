@@ -35,7 +35,7 @@ const Nav = () => {
                     <li className="nav-item">
                       <Link className='nav-item-link' to="/contact">Contact</Link>
                     </li>
-                  <button className="nav-item-btn">Explore dashboard</button>
+                  <Link to="/dashboard/crypto" className="nav-item-btn">Explore dashboard</Link>
                 </ul>
         </nav>    
     )
