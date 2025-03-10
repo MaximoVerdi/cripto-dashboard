@@ -27,6 +27,7 @@ El proyecto está estructurado en **tres páginas principales**:
   - Volumen de operaciones del día.
   - Tendencias.
 - Diseño claro y visualmente atractivo.
+- Posibilidad de cambiar entre temas (Dark y light).
 
 ### 3. **Contacto**
 
