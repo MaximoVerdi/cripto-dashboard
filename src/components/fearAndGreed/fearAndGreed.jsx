@@ -5,7 +5,6 @@ const FearAndGreed = () => {
   const [fearAndGreedData, setFearAndGreedData] = useState(null);
 
   useEffect(() => {
-    // Función para obtener los datos de la API
     const fetchFearAndGreed = async () => {
       try {
         const response = await fetch("https://api.alternative.me/fng/");
@@ -27,7 +26,6 @@ const FearAndGreed = () => {
 
   const { value, value_classification } = fearAndGreedData;
 
-  // Calcular el ángulo del punto en el semicírculo (invertido)
   const angle = 180 - ((value - 0) / (100 - 0)) * 180;
 
   return (
@@ -35,19 +33,17 @@ const FearAndGreed = () => {
       <p>
         Fear & Greed <i class="bx bx-chevron-right"></i>
       </p>
-      {/* Semicírculo */}
       <svg
         className="semi-circle"
         viewBox="0 0 100 50"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Segmentos del borde */}
         <path
           d="M 10 40 A 40 40 0 0 1 90 40"
           stroke="#ff4d4d"
           strokeWidth="5"
           fill="none"
-          strokeDasharray="31.42 125.66" // 1/5 del perímetro total
+          strokeDasharray="31.42 125.66"
           strokeDashoffset="0"
         />
         <path
@@ -83,7 +79,6 @@ const FearAndGreed = () => {
           strokeDashoffset="-125.68"
         />
 
-        {/* Punto blanco en el borde */}
         <circle
           cx={50 + 40 * Math.cos((angle * Math.PI) / 180)}
           cy={40 - 40 * Math.sin((angle * Math.PI) / 180)}
@@ -92,11 +87,8 @@ const FearAndGreed = () => {
         />
       </svg>
 
-      {/* Valor del índice */}
-
       <div className="value">{value}</div>
 
-      {/* Clasificación */}
       <div className="classification">{value_classification}</div>
     </div>
   );

@@ -27,11 +27,11 @@ const Coins = () => {
           throw new Error("Error al obtener los datos de criptomonedas");
         }
         const data = await response.json();
-        setCryptoData(data.RAW); // Almacena los datos en el estado
+        setCryptoData(data.RAW);
       } catch (error) {
-        setError(error.message); // Maneja errores
+        setError(error.message);
       } finally {
-        setLoading(false); // Finaliza la carga
+        setLoading(false);
       }
     };
 
