@@ -2,6 +2,9 @@
 
 **Crypto Dashboard** es el proyecto final de la primera sección del curso de **Full Stack Developer** de la **UTN**, enfocado en el desarrollo del **Front End**. Esta aplicación web ofrece una experiencia intuitiva y dinámica para seguir el mundo de las criptomonedas y los mercados financieros.
 
+> [!IMPORTANT]
+> Dashboard NO terminada, falta seccion STOCK.
+
 ---
 
 ## 🚀 Características principales
