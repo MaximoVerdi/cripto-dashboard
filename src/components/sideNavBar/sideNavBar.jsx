@@ -27,7 +27,7 @@ const SideNavBar = () => {
             </Link>
           </li>
           <li className="sidebar-nav__item">
-            <Link className="sidebar-nav__item-link" to="/apiData">
+            <Link className="sidebar-nav__item-link" to="/dashboard/crypto">
               <i className="bx bx-desktop"></i>
               <span className="link-text">Dashboard</span>
             </Link>

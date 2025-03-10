@@ -4,6 +4,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import "./cryptoDoughnut.css";
 import "../index.css";
 import { useTheme } from "../themeContext/themeContext"
+import { MdMargin } from "react-icons/md";
 
 // Registrar los componentes necesarios de Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -52,7 +53,7 @@ const CryptoDoughnutChart = () => {
           },
           boxWidth: 10,
           boxHeight: 10,
-          padding: 10,
+          padding:10,
         },
       },
       tooltip: {

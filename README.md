@@ -50,6 +50,8 @@ Este proyecto no solo demuestra las habilidades adquiridas en el curso, sino que
 ![Coins-section](./public/coins-section.png)
 ![Info-section](./public/info-section.png)
 ![FAQ-section](./public/faq-section.png)
+![Crypto-Dashboard](./public/Captura%20de%20pantalla%202025-03-09%20231323.png)
+![Crypto-Dashboard](./public/Captura%20de%20pantalla%202025-03-09%20231337.png)
 
 ---
 

@@ -22,13 +22,10 @@ const Bento = () => {
   // API de CryptoCompare
   useEffect(() => {
     const fetchNews = async () => {
+      setError(null);
       try {
-        const response = await fetch(
-          "https://min-api.cryptocompare.com/data/v2/news/",
-        );
-        if (!response.ok) {
-          throw new Error("Error al obtener las noticias");
-        }
+        const response = await fetch("https://min-api.cryptocompare.com/data/v2/news/");
+        if (!response.ok) throw new Error("Error al obtener las noticias");
         const data = await response.json();
         setNews(data.Data);
       } catch (error) {
@@ -37,9 +34,10 @@ const Bento = () => {
         setLoading(false);
       }
     };
-
+  
     fetchNews();
   }, []);
+  
 
   // Cada 10 seg cambio la noticia
   useEffect(() => {

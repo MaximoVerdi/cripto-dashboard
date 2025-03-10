@@ -6,29 +6,7 @@ const StockDashboard = () => {
     <>
       {/* Aquí va el contenido del dashboard de Stock */}
       <h1>
-        Contenido de stockDashboarContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de
-        stockDashboardContenido de stockDashboardContenido de stockDashboard d
+       En proceso...
       </h1>
     </>
   );
